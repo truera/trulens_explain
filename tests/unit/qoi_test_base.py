@@ -1,6 +1,6 @@
 import numpy as np
-from trulens.nn.backend import get_backend
-from trulens.nn.quantities import *
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.quantities import *
 
 
 class QoiTestBase(object):

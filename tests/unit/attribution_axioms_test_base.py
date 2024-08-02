@@ -14,17 +14,17 @@ These axioms should hold on arbitrary networks.
 from functools import partial
 
 import numpy as np
-from trulens.nn.attribution import InternalInfluence
-from trulens.nn.backend import get_backend
-from trulens.nn.distributions import DoI
-from trulens.nn.distributions import LinearDoi
-from trulens.nn.distributions import PointDoi
-from trulens.nn.quantities import ClassQoI
-from trulens.nn.quantities import InternalChannelQoI
-from trulens.nn.quantities import MaxClassQoI
-from trulens.nn.slices import Cut
-from trulens.nn.slices import InputCut
-from trulens.utils.test import tolerance
+from trulens_explain.nn.attribution import InternalInfluence
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.distributions import DoI
+from trulens_explain.nn.distributions import LinearDoi
+from trulens_explain.nn.distributions import PointDoi
+from trulens_explain.nn.quantities import ClassQoI
+from trulens_explain.nn.quantities import InternalChannelQoI
+from trulens_explain.nn.quantities import MaxClassQoI
+from trulens_explain.nn.slices import Cut
+from trulens_explain.nn.slices import InputCut
+from trulens_explain.utils.test import tolerance
 
 
 class AxiomsTestBase(object):

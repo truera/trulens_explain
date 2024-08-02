@@ -1,6 +1,6 @@
 import os
 
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.models import get_model_wrapper
 
 os.environ['TRULENS_BACKEND'] = 'tensorflow'
 

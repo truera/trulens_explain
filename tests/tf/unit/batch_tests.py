@@ -22,7 +22,7 @@ else:
     )
 
 from tests.unit.batch_test_base import BatchTestBase
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.models import get_model_wrapper
 
 
 class BatchTest(BatchTestBase, TestCase):

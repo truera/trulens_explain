@@ -10,8 +10,8 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
 from tests.unit.attribution_axioms_test_base import AxiomsTestBase
-from trulens.nn.backend import get_backend
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.models import get_model_wrapper
 
 
 class AxiomsTest(AxiomsTestBase, TestCase):

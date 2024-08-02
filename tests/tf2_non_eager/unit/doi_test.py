@@ -14,7 +14,7 @@ from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Lambda
 from tensorflow.keras.models import Model
 from tests.unit.doi_test_base import DoiTestBase
-from trulens.nn.models.keras import KerasModelWrapper
+from trulens_explain.nn.models.keras import KerasModelWrapper
 
 
 class DoiTest(DoiTestBase, TestCase):

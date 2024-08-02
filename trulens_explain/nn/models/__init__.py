@@ -15,10 +15,10 @@ import inspect
 import os
 import traceback
 
-from trulens.nn.backend import Backend
-from trulens.nn.backend import get_backend
-from trulens.utils import tru_logger
-from trulens.utils.typing import ModelLike
+from trulens_explain.nn.backend import Backend
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.utils import tru_logger
+from trulens_explain.utils.typing import ModelLike
 
 import trulens
 
@@ -183,7 +183,7 @@ def get_model_wrapper(
         "If this seems incorrect, you can force the correct backend by passing the `backend` parameter directly into your get_model_wrapper call."
     )
     if B.backend.is_keras_derivative():
-        from trulens.nn.models.keras import KerasModelWrapper
+        from trulens_explain.nn.models.keras import KerasModelWrapper
         return KerasModelWrapper(
             model,
             logit_layer=logit_layer,
@@ -193,7 +193,7 @@ def get_model_wrapper(
         )
 
     elif B.backend == Backend.PYTORCH:
-        from trulens.nn.models.pytorch import PytorchModelWrapper
+        from trulens_explain.nn.models.pytorch import PytorchModelWrapper
         return PytorchModelWrapper(
             model,
             logit_layer=logit_layer,
@@ -203,7 +203,7 @@ def get_model_wrapper(
     elif B.backend == Backend.TENSORFLOW:
         import tensorflow as tf
         if tf.__version__.startswith('2'):
-            from trulens.nn.models.tensorflow_v2 import Tensorflow2ModelWrapper
+            from trulens_explain.nn.models.tensorflow_v2 import Tensorflow2ModelWrapper
             return Tensorflow2ModelWrapper(
                 model,
                 logit_layer=logit_layer,
@@ -212,7 +212,7 @@ def get_model_wrapper(
                 custom_objects=custom_objects
             )
         else:
-            from trulens.nn.models.tensorflow_v1 import TensorflowModelWrapper
+            from trulens_explain.nn.models.tensorflow_v1 import TensorflowModelWrapper
             if input_tensors is None:
                 tru_logger.error(
                     'tensorflow1 model must pass parameter: input_tensors'

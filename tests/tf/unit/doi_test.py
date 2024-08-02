@@ -19,7 +19,7 @@ else:
     )
 
 from tests.unit.doi_test_base import DoiTestBase
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.models import get_model_wrapper
 
 
 class DoiTest(DoiTestBase, TestCase):

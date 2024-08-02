@@ -1,8 +1,8 @@
 import numpy as np
-from trulens.nn.attribution import InternalInfluence
-from trulens.nn.distributions import LinearDoi
-from trulens.nn.quantities import MaxClassQoI
-from trulens.nn.slices import InputCut
+from trulens_explain.nn.attribution import InternalInfluence
+from trulens_explain.nn.distributions import LinearDoi
+from trulens_explain.nn.quantities import MaxClassQoI
+from trulens_explain.nn.slices import InputCut
 
 
 class BatchTestBase(object):

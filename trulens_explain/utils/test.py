@@ -1,4 +1,4 @@
-from trulens.nn.backend import Backend
+from trulens_explain.nn.backend import Backend
 
 # Absolute floating tolerance levels.
 ATOL_DETERMINISTIC = 1e-08

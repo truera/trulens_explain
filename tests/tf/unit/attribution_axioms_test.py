@@ -22,7 +22,7 @@ else:
     )
 
 from tests.unit.attribution_axioms_test_base import AxiomsTestBase
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.models import get_model_wrapper
 
 
 class AxiomsTest(AxiomsTestBase, TestCase):

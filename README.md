@@ -1,4 +1,4 @@
-# Welcome to TruLens!
+# Welcome to TruLens Explain!
 
 ![TruLens](https://www.trulens.org/assets/images/Neural_Network_Explainability.png)
 
@@ -51,7 +51,7 @@ To get the model wrapper, use the `get_model_wrapper` method in `trulens.nn.mode
 For example,
 
 ```python
-from trulens.nn.models import get_model_wrapper
+from trulens_explain.nn.models import get_model_wrapper
 wrapped_model = get_model_wrapper(model_defined_via_keras)
 ```
 

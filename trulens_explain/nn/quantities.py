@@ -18,15 +18,15 @@ from abc import abstractmethod
 from inspect import signature
 from typing import Callable, List, Optional, Union
 
-from trulens.nn.backend import get_backend
-from trulens.utils.typing import DATA_CONTAINER_TYPE
-from trulens.utils.typing import many_of_om
-from trulens.utils.typing import OM
-from trulens.utils.typing import om_of_many
-from trulens.utils.typing import Outputs
-from trulens.utils.typing import render_object
-from trulens.utils.typing import Tensor
-from trulens.utils.typing import TensorLike
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.utils.typing import DATA_CONTAINER_TYPE
+from trulens_explain.utils.typing import many_of_om
+from trulens_explain.utils.typing import OM
+from trulens_explain.utils.typing import om_of_many
+from trulens_explain.utils.typing import Outputs
+from trulens_explain.utils.typing import render_object
+from trulens_explain.utils.typing import Tensor
+from trulens_explain.utils.typing import TensorLike
 
 
 class QoiCutSupportError(ValueError):

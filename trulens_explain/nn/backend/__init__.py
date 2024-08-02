@@ -6,12 +6,12 @@ import traceback
 from typing import Iterable, Tuple
 
 import numpy as np
-from trulens.utils import tru_logger
-from trulens.utils.typing import ModelInputs
-from trulens.utils.typing import nested_map
-from trulens.utils.typing import om_of_many
-from trulens.utils.typing import TensorAKs
-from trulens.utils.typing import Tensors
+from trulens_explain.utils import tru_logger
+from trulens_explain.utils.typing import ModelInputs
+from trulens_explain.utils.typing import nested_map
+from trulens_explain.utils.typing import om_of_many
+from trulens_explain.utils.typing import TensorAKs
+from trulens_explain.utils.typing import Tensors
 
 # Do not use directly, use get_backend
 _TRULENS_BACKEND_IMPL = None

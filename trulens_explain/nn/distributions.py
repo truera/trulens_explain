@@ -11,24 +11,24 @@ from abc import abstractmethod
 from typing import Callable, Optional
 
 import numpy as np
-from trulens.nn.backend import get_backend
-from trulens.nn.slices import Cut
-from trulens.utils.typing import accepts_model_inputs
-from trulens.utils.typing import BaselineLike
-from trulens.utils.typing import DATA_CONTAINER_TYPE
-from trulens.utils.typing import Inputs
-from trulens.utils.typing import many_of_om
-from trulens.utils.typing import MAP_CONTAINER_TYPE
-from trulens.utils.typing import ModelInputs
-from trulens.utils.typing import nested_cast
-from trulens.utils.typing import nested_map
-from trulens.utils.typing import nested_zip
-from trulens.utils.typing import OM
-from trulens.utils.typing import om_of_many
-from trulens.utils.typing import render_object
-from trulens.utils.typing import TensorAKs
-from trulens.utils.typing import TensorLike
-from trulens.utils.typing import Uniform
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.slices import Cut
+from trulens_explain.utils.typing import accepts_model_inputs
+from trulens_explain.utils.typing import BaselineLike
+from trulens_explain.utils.typing import DATA_CONTAINER_TYPE
+from trulens_explain.utils.typing import Inputs
+from trulens_explain.utils.typing import many_of_om
+from trulens_explain.utils.typing import MAP_CONTAINER_TYPE
+from trulens_explain.utils.typing import ModelInputs
+from trulens_explain.utils.typing import nested_cast
+from trulens_explain.utils.typing import nested_map
+from trulens_explain.utils.typing import nested_zip
+from trulens_explain.utils.typing import OM
+from trulens_explain.utils.typing import om_of_many
+from trulens_explain.utils.typing import render_object
+from trulens_explain.utils.typing import TensorAKs
+from trulens_explain.utils.typing import TensorLike
+from trulens_explain.utils.typing import Uniform
 
 
 class DoiCutSupportError(ValueError):

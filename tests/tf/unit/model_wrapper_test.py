@@ -22,7 +22,7 @@ else:
     )
 
 from tests.unit.model_wrapper_test_base import ModelWrapperTestBase
-from trulens.nn.models.tensorflow_v1 import TensorflowModelWrapper
+from trulens_explain.nn.models.tensorflow_v1 import TensorflowModelWrapper
 
 
 class ModelWrapperTest(ModelWrapperTestBase, TestCase):

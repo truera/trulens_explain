@@ -1,14 +1,14 @@
 import numpy as np
-from trulens.nn.attribution import InternalInfluence
-from trulens.nn.backend import get_backend
-from trulens.nn.distributions import GaussianDoi
-from trulens.nn.distributions import LinearDoi
-from trulens.nn.distributions import PointDoi
-from trulens.nn.quantities import LambdaQoI
-from trulens.nn.slices import Cut
-from trulens.nn.slices import InputCut
-from trulens.nn.slices import OutputCut
-from trulens.utils.typing import ModelInputs
+from trulens_explain.nn.attribution import InternalInfluence
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.distributions import GaussianDoi
+from trulens_explain.nn.distributions import LinearDoi
+from trulens_explain.nn.distributions import PointDoi
+from trulens_explain.nn.quantities import LambdaQoI
+from trulens_explain.nn.slices import Cut
+from trulens_explain.nn.slices import InputCut
+from trulens_explain.nn.slices import OutputCut
+from trulens_explain.utils.typing import ModelInputs
 
 
 class DoiTestBase(object):

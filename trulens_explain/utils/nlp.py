@@ -2,11 +2,11 @@
 
 from typing import Callable, List, Optional, Set, Tuple
 
-from trulens.nn.backend import get_backend
-from trulens.utils.typing import BaselineLike
-from trulens.utils.typing import ModelInputs
-from trulens.utils.typing import Tensor
-from trulens.utils.typing import TensorLike
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.utils.typing import BaselineLike
+from trulens_explain.utils.typing import ModelInputs
+from trulens_explain.utils.typing import Tensor
+from trulens_explain.utils.typing import TensorLike
 
 
 def token_baseline_swap(

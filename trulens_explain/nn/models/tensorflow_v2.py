@@ -1,25 +1,25 @@
 from typing import Tuple
 
 import tensorflow as tf
-from trulens.nn.backend import get_backend
-from trulens.nn.models.keras import \
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.models.keras import \
     KerasModelWrapper  # dangerous to have this here if tf-less keras gets imported
-from trulens.nn.quantities import QoI
-from trulens.nn.slices import Cut
-from trulens.nn.slices import InputCut
-from trulens.nn.slices import LogitCut
-from trulens.nn.slices import OutputCut
-from trulens.utils import tru_logger
-from trulens.utils.typing import DATA_CONTAINER_TYPE
-from trulens.utils.typing import Inputs
-from trulens.utils.typing import many_of_om
-from trulens.utils.typing import ModelInputs
-from trulens.utils.typing import nested_cast
-from trulens.utils.typing import nested_map
-from trulens.utils.typing import om_of_many
-from trulens.utils.typing import Outputs
-from trulens.utils.typing import TensorArgs
-from trulens.utils.typing import TensorLike
+from trulens_explain.nn.quantities import QoI
+from trulens_explain.nn.slices import Cut
+from trulens_explain.nn.slices import InputCut
+from trulens_explain.nn.slices import LogitCut
+from trulens_explain.nn.slices import OutputCut
+from trulens_explain.utils import tru_logger
+from trulens_explain.utils.typing import DATA_CONTAINER_TYPE
+from trulens_explain.utils.typing import Inputs
+from trulens_explain.utils.typing import many_of_om
+from trulens_explain.utils.typing import ModelInputs
+from trulens_explain.utils.typing import nested_cast
+from trulens_explain.utils.typing import nested_map
+from trulens_explain.utils.typing import om_of_many
+from trulens_explain.utils.typing import Outputs
+from trulens_explain.utils.typing import TensorArgs
+from trulens_explain.utils.typing import TensorLike
 
 if tf.executing_eagerly():
     tf.config.run_functions_eagerly(True)

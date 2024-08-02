@@ -10,13 +10,13 @@ from torch import cat
 from torch.nn import Linear
 from torch.nn import Module
 from torch.nn import ReLU
-from trulens.nn.attribution import InternalInfluence
-from trulens.nn.backend import get_backend
-from trulens.nn.distributions import PointDoi
-from trulens.nn.models import get_model_wrapper
-from trulens.nn.quantities import ClassQoI
-from trulens.nn.slices import Cut
-from trulens.nn.slices import InputCut
+from trulens_explain.nn.attribution import InternalInfluence
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.distributions import PointDoi
+from trulens_explain.nn.models import get_model_wrapper
+from trulens_explain.nn.quantities import ClassQoI
+from trulens_explain.nn.slices import Cut
+from trulens_explain.nn.slices import InputCut
 
 
 class FfnEdgeCaseArchitecturesTest(TestCase):

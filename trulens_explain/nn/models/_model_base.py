@@ -12,27 +12,27 @@ from abc import abstractmethod
 from typing import List, Optional, Tuple, Type, Union
 
 import numpy as np
-from trulens.nn.backend import get_backend
-from trulens.nn.quantities import QoI
-from trulens.nn.slices import Cut
-from trulens.nn.slices import InputCut
-from trulens.nn.slices import OutputCut
-from trulens.utils import tru_logger
-from trulens.utils.typing import ArgsLike
-from trulens.utils.typing import DATA_CONTAINER_TYPE
-from trulens.utils.typing import Inputs
-from trulens.utils.typing import InterventionLike
-from trulens.utils.typing import KwargsLike
-from trulens.utils.typing import many_of_om
-from trulens.utils.typing import ModelInputs
-from trulens.utils.typing import nested_cast
-from trulens.utils.typing import OM
-from trulens.utils.typing import om_of_many
-from trulens.utils.typing import Outputs
-from trulens.utils.typing import TensorAKs
-from trulens.utils.typing import TensorArgs
-from trulens.utils.typing import TensorLike
-from trulens.utils.typing import Tensors
+from trulens_explain.nn.backend import get_backend
+from trulens_explain.nn.quantities import QoI
+from trulens_explain.nn.slices import Cut
+from trulens_explain.nn.slices import InputCut
+from trulens_explain.nn.slices import OutputCut
+from trulens_explain.utils import tru_logger
+from trulens_explain.utils.typing import ArgsLike
+from trulens_explain.utils.typing import DATA_CONTAINER_TYPE
+from trulens_explain.utils.typing import Inputs
+from trulens_explain.utils.typing import InterventionLike
+from trulens_explain.utils.typing import KwargsLike
+from trulens_explain.utils.typing import many_of_om
+from trulens_explain.utils.typing import ModelInputs
+from trulens_explain.utils.typing import nested_cast
+from trulens_explain.utils.typing import OM
+from trulens_explain.utils.typing import om_of_many
+from trulens_explain.utils.typing import Outputs
+from trulens_explain.utils.typing import TensorAKs
+from trulens_explain.utils.typing import TensorArgs
+from trulens_explain.utils.typing import TensorLike
+from trulens_explain.utils.typing import Tensors
 
 
 class ModelWrapper(AbstractBaseClass):
