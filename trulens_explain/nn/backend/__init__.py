@@ -196,7 +196,7 @@ def get_backend(suppress_warnings=False):
     try:
         if _TRULENS_BACKEND == Backend.PYTORCH:
             _TRULENS_BACKEND_IMPL = importlib.import_module(
-                name='trulens.nn.backend.pytorch_backend.pytorch'
+                name='trulens_explain.nn.backend.pytorch_backend.pytorch'
             )
 
         elif _TRULENS_BACKEND.is_keras_derivative():
