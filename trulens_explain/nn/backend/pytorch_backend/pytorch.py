@@ -9,7 +9,7 @@ import numpy as np
 import torch
 from trulens_explain.nn.backend import _ALL_BACKEND_API_FUNCTIONS
 from trulens_explain.nn.backend import Backend
-import trulens.nn.backend as base_backend
+import trulens_explain.nn.backend as base_backend
 
 __all__ = _ALL_BACKEND_API_FUNCTIONS
 
